@@ -1211,13 +1211,13 @@ border-radius: 0px;}
             <ul>
                 <div class="cont_title">დაგვიკავშირდით</div>
                 <li class="name">Temo</li>
-                <li><img src="img/_phone-call.png">(+995) 574 23-32-90</li>
+                <li><img src="img/phone-call.png">(+995) 574 23-32-90</li>
                 <li><img src="img/gmail.png">Temo.dzirkvadze@gmail.com</li>
                 <li class="name">Murka</li>
-                <li><img src="img/_phone-call.png">(+995) 592 24-05-07</li>
+                <li><img src="img/phone-call.png">(+995) 592 24-05-07</li>
                 <li><img src="img/gmail.png">murka.dzirkvadze@gmail.com</li>
                 <li class="name">Roland</li>
-                <li><img src="img/_phone-call.png">(+995) 595 03-56-68</li>
+                <li><img src="img/phone-call.png">(+995) 595 03-56-68</li>
                 <li><img src="img/gmail.png">rartmeladze@gmail.com</li>
             
                 <li class="location1"><img src="img/loc1.png">ქვემი-ქართლი, წალკა, ს.იმერა</li>
@@ -1341,31 +1341,7 @@ border-radius: 0px;}
 
 <style>
 </style>
-<span id="viewCount">0</span>
 <script>
-
-    // Check if there's a stored date in local storage
-const storedDate = localStorage.getItem("viewDate");
-
-// Get the current date
-const currentDate = new Date().toLocaleDateString();
-
-// Check if the stored date matches the current date
-if (storedDate === currentDate) {
-    // If the date matches, increment the view count
-    const currentCount = localStorage.getItem("viewCount");
-    localStorage.setItem("viewCount", parseInt(currentCount) + 1);
-} else {
-    // If the date doesn't match, set the view count to 1 and update the stored date
-    localStorage.setItem("viewCount", "1");
-    localStorage.setItem("viewDate", currentDate);
-}
-
-// Update the view count on the page
-const viewCountElement = document.getElementById("viewCount");
-const updatedViewCount = localStorage.getItem("viewCount");
-viewCountElement.textContent = updatedViewCount;
-
 </script>
 
 </body>

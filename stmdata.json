@@ -160,52 +160,6 @@
                 "nomeri": " "
             },
             {
-                "saxeli": "\u10e1\u10d0\u10e5\u10d0\u10e0\u10d4 \u10db\u10d8\u10dc\u10d0"
-            },
-            {
-                "komentari": "\u10e1\u10d4\u10d3\u10d0\u10dc\u10d8 \/ \u10ef\u10d8\u10de\u10d8"
-            },
-            {
-                "lokacia": "\u10e1\u10d0\u10ec\u10e7\u10dd\u10d1\u10d8"
-            },
-            {
-                "raodenoba": 23
-            },
-            {
-                "fasi": "85"
-            },
-            {
-                "fasi_total": ""
-            }
-        ],
-        [
-            {
-                "nomeri": " "
-            },
-            {
-                "saxeli": "\u10e1\u10d0\u10db\u10e3\u10ee\u10e0\u10e3\u10ed\u10d4 \u10ee\u10e3\u10dc\u10d3\u10d4\u10d1\u10d8"
-            },
-            {
-                "komentari": "\u10d0\u10ee\u10d0\u10da\u10d8"
-            },
-            {
-                "lokacia": "5\/9"
-            },
-            {
-                "raodenoba": "22"
-            },
-            {
-                "fasi": "58"
-            },
-            {
-                "fasi_total": ""
-            }
-        ],
-        [
-            {
-                "nomeri": " "
-            },
-            {
                 "saxeli": "\u10ec\u10d8\u10dc\u10d0 \u10e4\u10d0\u10e0\u10d4\u10d1\u10d8"
             },
             {
@@ -242,6 +196,167 @@
             },
             {
                 "fasi": "60"
+            },
+            {
+                "fasi_total": ""
+            }
+        ],
+        [
+            {
+                "nomeri": " "
+            },
+            {
+                "saxeli": "\u10e1\u10d0\u10db\u10e3\u10ee\u10e0\u10e3\u10ed\u10d4 \u10ee\u10e3\u10dc\u10d3\u10d4\u10d1\u10d8"
+            },
+            {
+                "komentari": "\u10d0\u10ee\u10d0\u10da\u10d8"
+            },
+            {
+                "lokacia": "5\/9"
+            },
+            {
+                "raodenoba": 20
+            },
+            {
+                "fasi": "58"
+            },
+            {
+                "fasi_total": ""
+            }
+        ],
+        [
+            {
+                "nomeri": " "
+            },
+            {
+                "saxeli": "\u10e1\u10d0\u10e5\u10d0\u10e0\u10d4 \u10db\u10d8\u10dc\u10d0"
+            },
+            {
+                "komentari": "\u10e1\u10d4\u10d3\u10d0\u10dc\u10d8 \/ \u10ef\u10d8\u10de\u10d8"
+            },
+            {
+                "lokacia": "\u10e1\u10d0\u10ec\u10e7\u10dd\u10d1\u10d8"
+            },
+            {
+                "raodenoba": 20
+            },
+            {
+                "fasi": "85"
+            },
+            {
+                "fasi_total": ""
+            }
+        ],
+        [
+            {
+                "nomeri": " "
+            },
+            {
+                "saxeli": "\u10e3\u10d9\u10d0\u10dc\u10d0 \u10e4\u10d0\u10e0\u10d4\u10d1\u10d8"
+            },
+            {
+                "komentari": "\u10e4\u10dd\u10e0\u10d3\u10d8"
+            },
+            {
+                "lokacia": "11\/7"
+            },
+            {
+                "raodenoba": "6"
+            },
+            {
+                "fasi": "55"
+            },
+            {
+                "fasi_total": ""
+            }
+        ],
+        [
+            {
+                "nomeri": " "
+            },
+            {
+                "saxeli": "\u10d5\u10d4\u10da\u10dd\u10e1\u10d8\u10de\u10d4\u10d3\u10d8"
+            },
+            {
+                "komentari": "\u10db\u10d4\u10dd\u10e0\u10d0\u10d3\u10d8"
+            },
+            {
+                "lokacia": "\u10e1\u10d0\u10ec\u10e7\u10dd\u10d1\u10d8"
+            },
+            {
+                "raodenoba": "21"
+            },
+            {
+                "fasi": "240"
+            },
+            {
+                "fasi_total": ""
+            }
+        ],
+        [
+            {
+                "nomeri": " "
+            },
+            {
+                "saxeli": "\u10db\u10d0\u10e2\u10dd\u10e0\u10d8"
+            },
+            {
+                "komentari": "\u10e4\u10dd\u10e0\u10d3\u10d8 2,5\/\u10d3\u10d8\u10d6\u10d4\u10da\u10d8"
+            },
+            {
+                "lokacia": "\u10e1\u10d0\u10ec\u10e7\u10dd\u10d1\u10d8"
+            },
+            {
+                "raodenoba": "1"
+            },
+            {
+                "fasi": "2800"
+            },
+            {
+                "fasi_total": ""
+            }
+        ],
+        [
+            {
+                "nomeri": " "
+            },
+            {
+                "saxeli": "\u10db\u10d0\u10e2\u10dd\u10e0\u10d8"
+            },
+            {
+                "komentari": "\u10dd\u10de\u10d4\u10da\u10d8 1,8"
+            },
+            {
+                "lokacia": "\u10e1\u10d0\u10ec\u10e7\u10dd\u10d1\u10d8"
+            },
+            {
+                "raodenoba": "1"
+            },
+            {
+                "fasi": "1600"
+            },
+            {
+                "fasi_total": ""
+            }
+        ],
+        [
+            {
+                "nomeri": " "
+            },
+            {
+                "saxeli": "\u10e1\u10d4\u10e5\u10ea\u10d8\u10d0"
+            },
+            {
+                "komentari": "\u10e4\u10dd\u10e0\u10d3\u10d8 \u10d3\u10d8\u10d6\u10d4\u10da\u10d8\/ 2,8"
+            },
+            {
+                "lokacia": "6\/22"
+            },
+            {
+                "raodenoba": "2"
+            },
+            {
+                "fasi": "180"
             },
             {
                 "fasi_total": ""

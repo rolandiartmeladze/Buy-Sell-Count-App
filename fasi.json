@@ -138,5 +138,75 @@
         {
             "fasi": "60"
         }
+    ],
+    [
+        {
+            "nomeri": " "
+        },
+        {
+            "saxeli": "\u10e3\u10d9\u10d0\u10dc\u10d0 \u10e4\u10d0\u10e0\u10d4\u10d1\u10d8"
+        },
+        {
+            "komentari": "\u10e4\u10dd\u10e0\u10d3\u10d8"
+        },
+        {
+            "fasi": "55"
+        }
+    ],
+    [
+        {
+            "nomeri": " "
+        },
+        {
+            "saxeli": "\u10d5\u10d4\u10da\u10dd\u10e1\u10d8\u10de\u10d4\u10d3\u10d8"
+        },
+        {
+            "komentari": "\u10db\u10d4\u10dd\u10e0\u10d0\u10d3\u10d8"
+        },
+        {
+            "fasi": "240"
+        }
+    ],
+    [
+        {
+            "nomeri": " "
+        },
+        {
+            "saxeli": "\u10db\u10d0\u10e2\u10dd\u10e0\u10d8"
+        },
+        {
+            "komentari": "\u10e4\u10dd\u10e0\u10d3\u10d8 2,5\/\u10d3\u10d8\u10d6\u10d4\u10da\u10d8"
+        },
+        {
+            "fasi": "2800"
+        }
+    ],
+    [
+        {
+            "nomeri": " "
+        },
+        {
+            "saxeli": "\u10db\u10d0\u10e2\u10dd\u10e0\u10d8"
+        },
+        {
+            "komentari": "\u10dd\u10de\u10d4\u10da\u10d8 1,8"
+        },
+        {
+            "fasi": "1600"
+        }
+    ],
+    [
+        {
+            "nomeri": " "
+        },
+        {
+            "saxeli": "\u10e1\u10d4\u10e5\u10ea\u10d8\u10d0"
+        },
+        {
+            "komentari": "\u10e4\u10dd\u10e0\u10d3\u10d8 \u10d3\u10d8\u10d6\u10d4\u10da\u10d8\/ 2,8"
+        },
+        {
+            "fasi": "180"
+        }
     ]
 ]
