@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <link rel="stylesheet" href="stm.css">
+</head>
+<body onload="shesvla();">
+    <header>
+        <div class="left"> <div class="baner"> <img src="img/stm_group1.png"> </div> </div>
+
+
+        <div class="header_info_line">
+                <div class="header_info_index">
+
+                    <div class="items">
+                        <div class="checked"></div>
+                        <div class="header_info_index_text">მეორადი საბურავები</div>
+                    </div>
+
+                    <div class="items">
+                        <div class="checked"></div>
+                        <div class="header_info_index_text">მეორადი ავტო ნაწილები</div>
+                    </div>
+
+
+
+                </div>
+
+                    <div class="header_info_index">
+
+
+                        <div class="items">
+                            <div class="checked"></div>
+                            <div class="header_info_index_text">ავტომობილის აქსესუარები</div>
+                        </div>
+                        <div class="items">
+                            <div class="checked"></div>
+                            <div class="header_info_index_text">+ სერვისი</div>
+                        </div>
+
+
+                    </div>
+                    
+                        <div class="time"><img src="img/work.png">სამუშაო საათები: 24/7.</div>
+
+        </div>
+
+
+        <div id="view_elements_btn" class="view_elements_btn"></div>
+
+<div class="m_version_contact_conteiner">
+    <h1><div class="line_anime"></div>დაგვიკავშირდით</h1>
+    <h3> <img src="img/_phone-call.png"> (+995) 574 23-32-90</h3>
+    <h3> <img src="img/_phone-call.png"> (+995) 592 24-05-07</h3>
+    <h4> <img src="img/gmail.png">Temo.dzirkvadze@gmail.com</h4>
+    <h4> <img src="img/gmail.png">murka.dzirkvadze@gmail.com</h4>
+    <h4 class="head_loc"><img src="img/loc1.png">ქვემი-ქართლი, წალკა, ს.იმერა</h4>
+</div>
+
+ </header>
+    <style>
+
+
+
+.line_anime{
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: -3.5px;
+    background: linear-gradient(to right, transparent,rgb(103,27,255), transparent);
+    overflow: hidden;
+}
+.line_anime::after{
+    content: "";
+    background: linear-gradient(to right, transparent,rgb(249, 241, 0), transparent);
+    translate: -100% 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: line-anim 1s infinite;
+}
+@keyframes line-anim {
+    
+    100%{translate: 100% 0;}
+}
+
+.login_section{
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+.head_loc {
+    display: flex;
+    align-items: flex-start !important;
+}
+.head_loc img{
+    width: 13px !important;
+}
+
+
+body{
+    background-image: url(img/bg_img12.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.animation_block{
+    width: 98%;
+    height: 0px;
+    position: absolute;
+    margin-top:0px;
+    transition: 1s ease-in-out !important;
+    overflow: hidden;
+
+}
+
+.animation_block_active_2 {
+    overflow: hidden;
+    height: 70vh;
+    max-height: 70vh;
+    border-radius: 5px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    z-index: 1;
+    background: inherit;
+    margin-top: 15px;
+}
+
+.animation_block_active_2:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgb(255, 255, 255);
+  filter: blur(3px);
+  margin: -20px;
+}
+
+
+.user_view_header_line{
+    width: 100%;
+    height: 0;
+    font-size: 100%;
+    font-weight: bold;
+    overflow: hidden;
+    padding-left: 1%;
+    background-image: linear-gradient(to bottom,rgba(253, 81, 210, 0.4), rgba(253, 81, 210, 0.1));
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.user_view_header_line_active{
+    height: 8%;
+    padding-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.user_view_conteiner{
+    width: 100%;
+    height: 92%;
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.user_view_conteiner_left{
+width: 80%;
+height: 100%;
+}
+.user_view_conteiner_rigth{ width: 20%; height: 100%; }
+
+header { position: relative; }
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right,
+                                            rgba(253, 81, 210, 0.1),
+                                            rgba(253, 81, 210, 0.3), 
+                                            rgba(253, 81, 210, 0.5),
+                                            rgba(253, 81, 210, 0.7), 
+                                            rgba(253, 81, 210, 0.5),
+                                            rgba(253, 81, 210, 0.3),
+                                            rgba(253, 81, 210, 0.1)
+                                            );
+                                            
+    backdrop-filter: blur(1px); 
+    z-index: -1; 
+}
+
+
+
+section{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.end_line{
+    padding: 0px;
+    position: relative;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    }
+
+
+    .end_line::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    /* top: 0; */
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right,
+                                            rgba(253, 81, 210, 0.1),
+                                            rgba(253, 81, 210, 0.3), 
+                                            rgba(253, 81, 210, 0.5),
+                                            rgba(253, 81, 210, 0.7), 
+                                            rgba(253, 81, 210, 0.5),
+                                            rgba(253, 81, 210, 0.3),
+                                            rgba(253, 81, 210, 0.1)
+                                            );
+                                            
+    backdrop-filter: blur(1px); 
+    z-index: -1; 
+}
+
+
+h1{margin-bottom: 10px;}
+::placeholder{color: #fffeff;}
+
+
+
+.user_view_conteiner_left_head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 94%;
+    height: 0px;
+    padding: 5px 0px 5px 0px;
+    margin-left: 3%;
+    margin-top: 3px;
+    transition: 1s ease-in-out;
+}
+.user_view_conteiner_left_head_active{
+    height: auto;
+    border-bottom: 1px solid black;
+}
+
+
+
+.user_view_conteiner_left_head_text{
+    font-size: 90%;
+    padding: 9px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+
+.user_view_conteiner_left_head_find{
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    margin-left: 5px;
+    padding: 3px;
+    transition: 0.5s ease-in-out;
+}
+
+.find_input {
+    z-index: 3;
+    background-color: white;
+    margin-top: -10px;
+    padding: 2px;
+    font-size: 100%;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid black;
+    outline: none;
+    position: relative; 
+    text-align: right;
+    color: black;
+}
+.find_input::placeholder{ color: red; }
+
+.find_input_active {
+    background: none;
+    padding: 5px;
+    margin-top: 0px;
+    width: 200px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    font-weight: bolder;
+}
+
+.finde_clode_btn{ width: 10px; height: 10px; margin-left: 5px; padding: 5px;}
+.finde_clode_btn_stick{width:200%; height: 4px; background-color: rgb(0, 0, 0);}
+
+                    .first{ opacity: 0; transition: 0.5s ease-in-out; }
+                    .first_ative{ 
+                        margin-top: 3px;
+                        width: 200%;
+                        opacity: 1;
+                        transform: rotate(135deg);
+                     }
+
+                    .second{
+                        transition: 0.5s ease-in-out;
+                        z-index: 2;
+                        width: 200%;
+                        transform: rotate(45deg);
+                        margin-left: -22px;
+                        margin-top: 6px;
+                    }
+                    .second_active{
+                        z-index: 2;
+                        width: 200%;
+                        transform: rotate(45deg);
+                        margin-left: 0px;
+                        margin-top: -3px;
+                    }
+
+
+                    .users_table {
+                        padding-right: 3px;
+                        overflow-x: auto !important;
+                        margin-top: 5px;
+                        width: 70%;
+                        margin-left: 3%;
+                        height: 0px;
+                        transition: 1s ease-in-out;
+                    }
+                    .users_table_active{ height: 98%; }
+
+                    .users_table::-webkit-scrollbar {width: 10px;}
+
+                    .users_table::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, 
+  rgba(255, 255, 255,0), 
+  rgb(255, 3, 3), 
+  rgb(243, 227, 4), 
+  rgb(255, 3, 3, 1), 
+  rgb(255, 3, 3, 0));
+   border-radius: 0px;}
+
+
+
+
+
+
+.users_table table{
+    background: none;
+    width: 100%;
+    margin-left: 0px;
+}
+.users_table table tr{
+    background-color: rgba(8, 8, 8, 0.3);
+    color: white;
+    padding: 1px;
+}
+.users_table table tr td{
+padding: 1px;
+padding-left: 8px;
+}
+
+.users_table_table_headline{
+    background-color: rgb(0, 255, 128,0.3) !important;
+    color: black !important;
+    text-align: center;
+    font-size: 100%;
+    font-weight: bolder;
+}
+
+.conteiner_rigth{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.favorite_items{
+    width: 100%;
+    height: 0px;
+    overflow-x: auto;
+    transition: 0.5s ease-in-out;
+}
+.favorite_items_active{height: 45%; border-bottom: 0.5px solid black; }
+
+.favorite_items::-webkit-scrollbar {width: 4px;}
+.favorite_items::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, 
+  rgba(255, 255, 255,0), 
+  rgb(255, 3, 3), 
+  rgb(243, 227, 4), 
+  rgb(255, 3, 3, 1), 
+  rgb(255, 3, 3, 0));
+   border-radius: 0px;
+}
+
+
+.favorite_items_ul{
+    padding: 0px;
+    margin: 10px;
+    list-style: none;
+}
+
+.favorite_head{
+    font-size: 110%;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 5px;
+    color: red;
+}
+.favorite_item{
+    font-size: 80%;
+    padding: 3px;
+    padding-left: 8px;
+    margin: 3px;
+    border-left: 3px solid rgb(255, 0, 0);
+    background-color: rgb(0, 0, 0,0.3);
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+.facebook_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+.facebook_page_active{ height: 44%;}
+
+.facebook_page h1{
+font-size: 100%;
+border: none;
+color: rgb(247, 3, 3);
+}
+
+
+.contact_aside_underline {
+    display: flex;
+    width: 0px;
+    height: 10%;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    color: wheat;
+    transition: 0.5s ease-in-out;
+}
+
+.contact_aside_underline_active { width: 100%; }
+
+
+.contact_aside_underline_hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 100%;
+    position: absolute;
+    padding: 0px;
+    width: 0px;
+    overflow: hidden;
+    width: 18%;
+    height: 0px;
+    margin: 0px;
+    margin-left: 1%;
+    margin-bottom: 11%;
+    transition: 0.5s ease-in-out;
+}
+
+.contact_aside_underline_hover_active {
+    border-radius: 0px;
+    height: 100px;
+    border-radius: 15px 15px 0px 0px;
+
+}
+
+
+
+.contact_aside_icon:hover{color: black;}
+    .contact_aside_icon{
+    font-size: 70%;
+    cursor: pointer !important;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    color: white;
+}
+.contact_aside_icon img{ width: 30px; height: 30px; margin-bottom: 3px; }
+.wats img{
+    padding: 2px;
+    margin-left: 2px;
+    max-width: 25px !important;
+    max-height: 25px !important;
+}
+
+
+.contact_aside_icon::before {
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 60px;
+    border-radius: 10px;
+    margin: 0px;
+    margin-bottom: -30px;
+    padding: 0px;
+    z-index: -1;
+    align-items: flex-end;
+    /* background-color: rebeccapurple ; */
+    transition: .3s ease-in-out;
+}
+.contact_aside_icon:hover::before {  margin-bottom: 45px !important; height: 65px;}
+
+
+
+.messenger::before{ background-image: linear-gradient(to right,rgb(0, 106, 255, 1), rgb(0, 106, 255, 1)); }
+.wats::before{ background-image: linear-gradient(to right, rgb(37, 211, 102, 1),  rgb(37, 211, 102, 1)); }
+.vib::before{ background-image: linear-gradient(to right, rgb(89, 38, 124, 1),  rgb(89, 38, 124, 1)); }
+
+.messenger:hover::before{ background-image: linear-gradient(to right,rgb(0, 106, 255, 1), rgb(0, 106, 255, 1)); }
+.vib:hover::before{ background-image: linear-gradient(to right, rgb(89, 38, 124, 1),  rgb(89, 38, 124, 1)); }
+.wats:hover::before{ background-image: linear-gradient(to right, rgb(37, 211, 102, 1),  rgb(37, 211, 102, 1)); }
+
+
+
+.fb-page{margin-bottom: 8px; border-radius: 10px !important;}
+
+
+#users_table_find_result{display: none;}
+
+
+.cont_title{width: 100%; text-align: center; font-size: 130%; font-weight: bolder; margin-top: 10px; margin-bottom: 10px;}
+
+.contact_conteiner{
+    margin-left: 2%;
+    width: 25%;
+    height: 0px;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+.contact_conteiner_active{
+    margin-left: 2%;
+    width: 25%;
+    height: 100%;
+}
+
+
+.tabeli_cont{
+    width: 100%;
+    height: 83%;
+    display: flex;
+}
+
+.contact_conteiner img{ width: 15px; margin-right: 8px; margin-left: 2px;}
+.contact_conteiner ul{ padding: 0; margin: 0; list-style: none; font-size: 80%;}
+.contact_conteiner ul .name{ 
+    color: black !important; 
+    font-weight: bolder; 
+    margin: 3px; 
+    margin-left: 10px; 
+    text-decoration: underline; 
+    width: 80%; 
+    padding-left: 15px; 
+    margin-top: 10px; 
+    margin-bottom: 6px; 
+    box-shadow: none;  
+    cursor: default;
+}
+
+.contact_conteiner ul li{ 
+    color: white; 
+    transition: .5s ease-in-out; 
+    position: relative; 
+    padding: 3px; 
+    display: flex;  
+    align-items: center; 
+    margin: 6px; 
+    margin-left: 10px;  
+    box-shadow: 0px 2px 4px rgba(2, 2, 2, 0.3); 
+    cursor: pointer;
+    opacity: 0;
+} 
+.contact_conteiner ul li::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -4px;
+    margin: 0;
+    padding: 0;
+    width: 4px;
+    height: 100%;
+    transition: 1s ease-in-out;
+    background-color: rgba(255, 3, 238);
+    z-index: -1;
+} 
+
+.contact_conteiner ul li:hover{color: yellow; box-shadow: none; border-radius: 0px 0px 5px 5px; font-weight: bolder;} 
+
+.contact_conteiner ul li:hover::before{
+    left: 0px;
+    width: 100%;
+    background-color: rgba(255, 3, 238, 0.5);
+    border-radius: 0px 0px 5px 5px;
+} 
+.contact_conteiner ul .name:hover::before{ width: 0px; height: 0px;}
+.contact_conteiner ul .name::before{ width: 0px; height: 0px;}
+
+.location1 img{width: 25px;}
+
+.location1{
+    cursor: default !important;
+    text-decoration: underline;
+    margin-top: 15px !important;
+    margin-left: 20px !important;
+    font-size: 100% !important;
+    color: rgb(0, 0, 0) !important;
+    box-shadow: none !important;
+    font-weight: bolder !important;
+}
+.location1:hover{color: rgb(0, 0, 0);}
+.location1::before{ background: none !important;}
+.location1:hover::before{ background: none !important;}
+
+
+
+@media screen and (max-width: 500px){
+
+        body{
+            transition:  3.2s ease-in-out;        background-image: url(img/bg3.jpg);
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .contact_conteiner{display: none;}
+
+.baner { width: 100%;  margin-left: 15px}
+.baner img { max-width: 100%; height: 80px;}
+
+
+
+header {
+    display: flex;
+    align-items: flex-start !important;
+    /* justify-content: flex-start; */
+    box-shadow: none;
+    border-bottom: 0.3px solid black;
+    position: relative; 
+    justify-content: space-between;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0px 5px 0px 5px;
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(to bottom,
+                                      rgba(142, 142, 142, 0.2), 
+                                      rgba(142, 142, 142, 0.4),
+                                      rgba(142, 142, 142, 0.1)
+    );
+    filter: blur(0px); 
+
+    pointer-events: none; 
+}
+
+
+.end_line {color: white;}
+    .end_line::before {
+    background-image: linear-gradient(to top,
+                                            rgba(164, 163, 163, 0.7), 
+                                            rgba(164, 163, 163, 0.5),
+                                            rgba(164, 163, 163, 0.2),  
+                                            rgba(164, 163, 163, 0)
+                                            ) !important;
+    backdrop-filter: blur(0px); 
+}
+
+
+
+
+
+
+
+
+
+.animation_block_active_2 {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none;
+    border-radius: 0px;
+    margin: 0px !important;
+    padding: 0px;
+    padding-top: 0px !important;
+    overflow: visible;
+    position: relative;
+    overflow: hidden;
+
+}
+.animation_block_active_2::before {
+  background: none;
+  box-shadow: none;
+  filter: none;
+}
+
+.view_eleents {
+    /* height: 100vh; */
+    height: auto;
+    position: relative;
+    padding: 0px !important;
+}
+
+
+
+.user_view_header_line {
+    padding-left: 2% !important;
+    margin-left: 2%;
+    width: 98%;
+    padding-top: 3px;
+    padding-bottom: 15px;
+    height: 5%;
+    font-size: 50%;
+    color: yellow;
+    border-top: 1.5px solid rgb(243, 227, 4);
+    background-image: linear-gradient(to bottom, rgba(142, 142, 142, 0.0), rgba(142, 142, 142, 0.1), rgba(142, 142, 142, 0.0) );
+}
+
+.user_view_conteiner_left_head {
+    font-size: 50%;
+    height: auto;
+    margin-top: 1px;
+    padding: 1px;
+}
+.user_view_conteiner_left_head_text {
+    font-size: 130%;
+    color:burlywood;
+    padding: 0px;
+    margin-left: 3%;
+}
+
+
+.second {
+    width: 2px;
+    width: 125%;
+    margin-left: -20px;
+    margin-top: 2px;
+    background-color:  coral;
+
+
+}
+
+
+
+
+
+    .first_ative{ 
+        margin-top: 2px;
+        border-radius: 5px;
+
+        margin-left: -5px;
+        width: 150%;
+        opacity: 1;
+        transform: rotate(135deg);
+        background-color: rgba(0, 0, 0);
+
+    }
+
+    .second_active{
+    z-index: 2;
+    width: 150%;
+    transform: rotate(45deg);
+    margin-left: -5px;
+    margin-top: -4px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0);
+
+    }
+
+
+.find_input {
+    margin-top: -4px;
+    font-size: 90%;
+    width: 12px;
+    border: 0.5px solid coral;
+
+}
+
+.user_view_conteiner_left {
+    border-right: 0px !important;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.user_view_conteiner {
+    width: 100%;
+    height: auto;
+    font-size: 90%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+
+.find_input_active {
+    background-color: rgb(255, 255, 0,0.5);
+    padding: 5px;
+    margin-top: 0px;
+    width: 150px;
+    border-radius: 5px;
+    border: 0.5px solid rgb(245, 253, 5);
+    font-weight: bolder;
+}
+
+
+.users_table {
+    max-height: 200px;
+    margin-top: 2px;
+    width: 94%;
+    margin-left: 3%;
+}
+
+
+
+.favorite_items_active {height: 90%;}
+.user_view_conteiner_rigth {
+    width: 98%;
+    padding-bottom: 30px;
+    height: auto;
+}
+
+
+.favorite_head {
+    font-size: 90%;
+    text-align: left;
+    padding-left: 5%;
+    margin-bottom: 5px;
+    color: rgb(4, 255, 66);
+}
+.favorite_items_ul {margin: 5px; margin-left: 10px;}
+
+
+
+
+
+
+.facebook_page {
+    width: 75%;
+    height: 170px;
+    overflow: auto;
+    margin-top: 3px;
+    margin-right: 10px;
+    align-items: flex-end;
+}
+
+.facebook_page h1 {
+    text-align: right;
+    font-size: 80%;
+    margin-bottom: 3px;
+}
+
+.contact_aside_underline_active {
+    width: 27%;
+    margin-right: 70%;
+    margin-top: -130px;
+}
+
+.contact_aside_icon {
+    font-weight: bolder;
+    font-size: 70%;
+    width: 90%;
+    height: auto;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color: white;
+}
+
+
+.contact_aside_underline {
+    padding-top: 5px;
+    display: flex;
+    height: auto;
+    transition: 0.3s ease-in-out;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+.contact_aside_underline_hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 100%;
+    position: absolute;
+    padding: 0px;
+    width: 0px;
+    overflow: hidden;
+    height: 100px;
+    margin: 0px;
+    margin-left: 100px;
+    transition: 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.contact_aside_underline_hover_active {
+    margin-top: -1px;
+    width: 40%;
+    border-radius: 0px 10px 10px 0px;
+}
+.contact_aside_underline_hover samp {padding: 2px;}
+
+
+
+.conteiner_rigth { display: flex; align-items: flex-end; }
+
+.vib{ background-color: rgb(89, 38, 124,0.4); z-index: 1; }
+.wats{ background-color: rgb(37, 211, 102,0.4); z-index: 1; }
+.messenger{ background-color: rgb(0, 106, 255, 0.4); z-index: 1; }
+
+
+.messenger::before{ background-image: linear-gradient(to right,rgb(0, 106, 255, 1), rgb(0, 106, 255, 0)); }
+.wats::before{ background-image: linear-gradient(to right, rgb(37, 211, 102, 1),  rgb(37, 211, 102, 0)); }
+.vib::before{ background-image: linear-gradient(to right, rgb(89, 38, 124, 1),  rgb(89, 38, 124, 0)); }
+
+.messenger:hover::before{ background-image: linear-gradient(to right,rgb(0, 106, 255, 1), rgb(0, 106, 255, 1)); }
+.vib:hover::before{ background-image: linear-gradient(to right, rgb(89, 38, 124, 1),  rgb(89, 38, 124, 1)); }
+.wats:hover::before{ background-image: linear-gradient(to right, rgb(37, 211, 102, 1),  rgb(37, 211, 102, 1)); }
+
+.contact_aside_icon::before {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 10px 0px 0px 10px;
+    margin: 0px;
+    padding: 0px;
+    z-index: -1;
+    transition: .3s ease-in-out;
+}
+.contact_aside_icon:hover::before {
+    height: 30px;
+    width: 28%;
+    color: black;
+    margin-top: 3px;
+    margin-bottom: 3px !important;
+
+}
+.wats img{
+    padding: 2px;
+    margin-left: 2px;
+    max-width: 25px !important;
+    max-height: 25px !important;
+}
+.contact_aside_icon img{
+    margin-right: 5px;
+    max-width: 30px;
+    max-height: 30px;
+    margin-bottom: 0px;
+ 
+}
+
+
+
+.user_view_conteiner_left_head_active{
+    border-radius: 2px;
+    font-size: 40%;
+    padding: 3px;
+    border-bottom: 0px solid rgb(255, 255, 255);
+
+    /* background-color: rgb(218, 165, 32,0.2); */
+    box-shadow: 0px 0px 160px inset rgba(1, 198, 96, 0.2), 0px 3px 5px rgba(10, 10, 10, 0.8);
+                                                backdrop-filter: blur(0px);
+}
+ 
+
+
+.users_table table tr td{border-color: rgb(184, 138, 73,0.4) !important;}
+
+.favorite_item{
+    background-color: rgba(155, 106, 38, 0.3);
+}
+.head_loc {
+    font-size: 50% !important;
+}
+
+.users_table::-webkit-scrollbar {width: 5px !important;}
+
+.users_table::-webkit-scrollbar-thumb {
+background-image: linear-gradient(to bottom, 
+rgba(255, 255, 255,0), 
+rgb(255, 0, 0), 
+rgb(0, 255, 17), 
+rgb(243, 227, 4), 
+rgb(0, 255, 17),
+rgb(255, 0, 0), 
+rgb(255, 3, 3, 0));
+border-radius: 0px;}
+
+
+
+
+}
+
+.boll_0{
+    /* background-color: rgb(127, 255, 212,0.4); */
+    top: -4%;
+    left: -4%;
+    box-shadow: 3px 3px 200px  20px yellow, 
+                0px 0px 300px  3px rgba(255, 0, 200, 0.3) inset;
+}
+.boll_1{
+    /* background-color: rgb(104, 218, 5,0.4); */
+    top: -5%;
+    left: 90%;
+    box-shadow: 3px 3px 200px  20px yellow, 
+                0px 0px 300px  3px rgba(47, 255, 0, 0.3) inset;
+}
+.boll_2{ 
+    /* background-color: rgb(104, 218, 5,0.4); */
+
+    top: 93%;
+    left: 40%;
+    box-shadow: 3px 3px 200px  20px yellow, 
+                0px 0px 300px  3px rgb(255, 255, 0, 0.3) inset;
+}
+
+.boll{
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    transition: 3.5s ease-in-out;
+    z-index: -5;
+}
+
+.username{
+    width: 80%;
+    height: auto;
+    margin-top: 15px;
+}
+.password{
+    margin-top: 15px;
+    width: 80%;
+    height: auto;
+
+}
+.login_icon{width: 30px; height: 30px; margin-top: 4px; margin-bottom: 4px;}
+.login_line{
+    display: flex; align-items: center; border-radius: 3px;
+    /* background-color: rgb(138, 43, 226 , 0.4); */
+    background-image: linear-gradient(to top, 
+                                            rgb(138, 43, 226  , 1), 
+                                            rgb(138, 43, 226 , 0.4), 
+                                            rgb(138, 43, 226 , 0.4),  
+                                            rgb(138, 43, 226 , 0.3), 
+                                            rgb(138, 43, 226 , 0.1),  
+                                            rgb(138, 43, 226  , 0));
+}
+
+
+.forget_pass{
+    margin: 8px;
+    color: yellow;
+    font-size: 80%;
+    cursor: pointer;
+    box-shadow: 0px 0px 150px 3px rgb(238, 130, 238,1), 0px 0px 30px 1px rgb(255, 255, 0, 0.3) inset ; padding: 3px; border-radius: 5px;
+}
+
+.admin{
+    font-size: 70%; color: wheat;
+}
+</style>
+
+<section class="login_section" id="login_section">
+
+    <div id="view_eleents" class="view_eleents"> 
+
+        
+        <div id="animation_block" class="animation_block animation_block_active_2">
+
+<div id="user_view_header_line" class="user_view_header_line"></div>
+
+<div class="user_view_conteiner">
+
+    <div id="user_view_conteiner_left"  class="user_view_conteiner_left">
+
+
+
+        <div id="user_view_conteiner_left_head"  class="user_view_conteiner_left_head">
+
+            <div id="find_item_text_conteiner" class="user_view_conteiner_left_head_text"></div>
+
+            <div id="user_view_conteiner_left_head_find" class="user_view_conteiner_left_head_find">
+                <input id="find_input" class="find_input" type="text">
+
+                <div class="finde_clode_btn">
+                    <div id="first" class="finde_clode_btn_stick first"></div>
+                    <div id="second" class="finde_clode_btn_stick second"></div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <!--  -->
+<div class="tabeli_cont">
+
+        <div id="users_table" class="users_table">
+
+
+
+            <table id="users_table_item">
+                <tbody>
+                    <tr class="users_table_table_headline">
+                        <td>პროდუქტის დასახელება</td>
+                        <td>კომენტარი/შენიშვნა</td>
+                        <td>მარაგშია</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table id="users_table_find_result">
+                <tbody>
+                    <tr class="users_table_table_headline">
+                        <td>პროდუქტის დასახელება</td>
+                        <td>კომენტარი/შენიშვნა</td>
+                        <td>მარაგშია</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+
+        <div id="contact_conteiner" class="contact_conteiner">
+
+            <ul>
+                <div class="cont_title">დაგვიკავშირდით</div>
+                <li class="name">Temo</li>
+                <li><img src="img/_phone-call.png">(+995) 574 23-32-90</li>
+                <li><img src="img/gmail.png">Temo.dzirkvadze@gmail.com</li>
+                <li class="name">Murka</li>
+                <li><img src="img/_phone-call.png">(+995) 592 24-05-07</li>
+                <li><img src="img/gmail.png">murka.dzirkvadze@gmail.com</li>
+                <li class="name">Roland</li>
+                <li><img src="img/_phone-call.png">(+995) 595 03-56-68</li>
+                <li><img src="img/gmail.png">rartmeladze@gmail.com</li>
+            
+                <li class="location1"><img src="img/loc1.png">ქვემი-ქართლი, წალკა, ს.იმერა</li>
+            </ul>
+            
+            
+                            </div>
+            
+
+
+        </div>
+
+</div>
+
+
+
+
+
+
+    <div class="user_view_conteiner_rigth">
+
+        <div class="conteiner_rigth">
+
+            <div id="favorite_items" class="favorite_items">
+                <ul class="favorite_items_ul">
+                    <li class="favorite_head">აქტუალური</li>
+                    <li class="favorite_item"></li>
+                    <li class="favorite_item"></li>
+                    <li class="favorite_item"></li>
+                    <li class="favorite_item"></li>
+                    <li class="favorite_item"></li>
+                </ul>
+            </div>
+
+                <div id="facebook_page" class="facebook_page">
+
+                    <h1>გამოგვყევი ფეისბუქზე</h1>
+                    
+                        <script>
+                            window.fbAsyncInit = function() {
+                            FB.init({
+                                appId            : 'your-app-id',
+                                autoLogAppEvents : true,
+                                xfbml            : true,
+                                version          : 'v17.0'
+                            });
+                            };
+                        </script>
+
+                                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+        
+                                    <div class="fb-page" data-href="https://www.facebook.com/RMdor.Georgia" 
+                                        data-tabs="timeline" data-width="240" data-height="135" data-small-header="false" 
+                                        data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                            <blockquote cite="https://www.facebook.com/RMdor.Georgia" class="fb-xfbml-parse-ignore">
+                                                <a href="https://www.facebook.com/RMdor.Georgia">RMdor&#039;s Georgia</a></blockquote>
+                                    </div>
+                    
+                </div>
+
+
+                <div id="contact_aside_underline" class="contact_aside_underline">
+                    <div id="contact_aside_underline_hover" class="contact_aside_underline_hover"> </div>
+                    <div class="contact_aside_icon wats"><img src="img/whatsapp.png">Watsapp</div>
+                    <div class="contact_aside_icon vib"><img src="img/viber.png"> Viber</div>
+                    <div class="contact_aside_icon messenger"><img src="img/messenger.png">Messenger</div>
+
+                </div>
+
+        </div>
+
+    </div> 
+       </div>
+
+        </div>
+
+
+        </div>  
+
+    
+
+
+
+            <div id="forma" class="login_form">
+                <div class="boll boll_0"></div>
+                <div class="boll boll_1"></div>
+                <div class="boll boll_2"></div>
+
+                
+
+               
+                <h1>ძირითად სისტემაში შესვლა</h1>
+                <h3>მოგესალმებით</h3>
+                <div class="username login_line"><img class="login_icon" src="img/user.png">  <input id="username" type="text" placeholder="მომხმარებელი"></div>
+                <div class="password login_line"><img class="login_icon" src="img/pass.png"> <input id="password" type="password" placeholder="პაროლი"></div>
+                <div class="daimaxsovre"><input id="checked" type="checkbox" title="">დაიმახსოვრე პაროლი</div>
+
+                <input id="sistemashi_shesvla" type="button" value="შესვლა">
+                <div class="forget_pass">დამავიწყდა პაროლი!</div>
+                <!-- <div class="admin">@rartmeladze!@gmail.com</div> -->
+
+            </div>
+
+</section>
+
+<script>
+
+
+</script>
+
+<div class="end_line">  @ Roland Artmeladze 2023 </div>
+
+
+
+
+
+
+<script src="stm.js"></script>
+
+
+
+<style>
+</style>
+<span id="viewCount">0</span>
+<script>
+
+    // Check if there's a stored date in local storage
+const storedDate = localStorage.getItem("viewDate");
+
+// Get the current date
+const currentDate = new Date().toLocaleDateString();
+
+// Check if the stored date matches the current date
+if (storedDate === currentDate) {
+    // If the date matches, increment the view count
+    const currentCount = localStorage.getItem("viewCount");
+    localStorage.setItem("viewCount", parseInt(currentCount) + 1);
+} else {
+    // If the date doesn't match, set the view count to 1 and update the stored date
+    localStorage.setItem("viewCount", "1");
+    localStorage.setItem("viewDate", currentDate);
+}
+
+// Update the view count on the page
+const viewCountElement = document.getElementById("viewCount");
+const updatedViewCount = localStorage.getItem("viewCount");
+viewCountElement.textContent = updatedViewCount;
+
+</script>
+
+</body>
+</html>

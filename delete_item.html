@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="stm.css"> -->
+    <link rel="stylesheet" href="new_syle.css">
+    <title>შპს.'ს.ტემუ' ჯგუფი</title>
+    <style>
+      header::after {
+    content: "პროდუქტის წაშლა";
+      }
+    </style>
+    
+    
+
+
+
+</head>
+<body onload="main(); tsashla();">
+    <script>
+        
+
+</script>
+<header>
+
+
+          <div class="baner"> 
+            <img src="img/stm_group1.png"> 
+        </div>
+        <div id="meniu_btn" class="meniu_btn">
+
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class= "line"></div>
+        </div>
+
+
+     <nav id="nav" class="nav">
+  <ul>
+        <li id="dzebna" class="list-item active">მთავარი</li>
+        <li id="damateba" class="list-item">დამატება</li>
+        <li id="tsashla"  class="list-item meniu_active">წაშლა</li>
+        <li id="fasi"  class="list-item">ფასები</li>
+        <li id="istoria"  class="list-item">ისტორია</li>
+      </ul>
+    </nav>
+
+
+</header>
+
+<section>
+
+    <article  class="gasayidi_producti">
+
+      
+      <form id="delete_item" class="add_form">
+
+          <input  class="pozicia" id="pozicia" type="text">
+
+              <div class="item"> <input class="input_item" id="dasaxeleba" type="text" placeholder="დასახელება"> </div>
+              <div class="item"> <input  class="input_item" id="komentari" type="text" placeholder="კომენტარი"> </div>
+              <div class="item"> <input  class="input_item" id="add_lokacia" type="text" placeholder="ადგილი"> </div>
+              <div class="item"> <input  class="input_item" id="raodenoba" type="number" placeholder="რაოდენობა"> </div>
+              <div class="item"> <input  class="input_item" id="fasi" type="number" placeholder="ფასი"> </div>
+
+          <div class="item_1_btn_line">
+
+
+              <input class="button add_btn_" style="bottom: 140px;" type="button" name="add_btn" id="edit_item_btn" value="რედაქტირება">
+              <input class="button add_btn_" style="bottom: 40px;" type="button" name="add_btn" id="delete_item_btn" value="წაშლა">
+
+              </div>
+      </form>
+    </article>
+
+</div>
+
+
+<div  class="table_conteiner">
+
+  <table id="_first_table">
+    <tbody id="table_body">
+      <tr id="table_header_line"></tr>
+    </tbody>
+  </table>
+
+</div>
+
+</section>
+
+
+<footer class="end_line"> @ Roland Armeladze 2023 </footer>
+
+    <script src="stm.js"></script>
+
+  <script>
+
+  </script>
+</body>
+</html>

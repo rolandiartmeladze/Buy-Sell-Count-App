@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="stm.css"> -->
+    <link rel="stylesheet" href="new_syle.css">
+    <title>შპს.'ს.ტემუ' ჯგუფი</title>
+
+<style>
+
+  .result{
+    width: 96%;
+  }
+  header::after {
+content: "პროდუქტის დამატეა";
+  }
+</style>
+
+</head>
+<body onload="main(); damateba();">
+<header>
+
+
+  <div class="baner"> 
+    <img src="img/stm_group1.png"> 
+</div>
+
+<div id="meniu_btn" class="meniu_btn">
+
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class= "line"></div>
+</div>
+
+
+<nav id="nav" class="nav">
+<ul>
+    <li id="dzebna" class="list-item active"> მთავარი</li>
+    <li id="damateba" class="list-item meniu_active"> დამატება</li>
+    <li id="tsashla"  class="list-item"> წაშლა</li>
+    <li id="fasi"  class="list-item"> ფასები</li>
+    <li id="istoria"  class="list-item">ისტორია</li>
+  </ul>
+</nav>
+</header>
+
+<section>
+
+
+
+  <article class="gasayidi_producti">
+
+    <div id="fasi_result" class="fasi_result">
+
+      <div class="table_conteiner result">
+        <table>
+            <tr class="table_fasi_result_head">
+              <td>დასახელება</td>
+              <td>კომენტრაი</td>
+              <td>ფასი</td>
+            </tr>
+
+          <tbody id="savaraudo_fasi">
+          </tbody>
+        </table>
+      </div>
+      
+
+    </div>
+      
+    <form  id="add_produqti" class="add_form">
+
+        <input class="pozicia" id="pozicia" type="text">
+
+            <div class="item"> <input id="add_dasaxeleba" type="text" placeholder="დასახელება"> </div>
+            <div class="item"> <input id="add_komentari" type="text" placeholder="კომენტარი"> </div>
+            <div class="item"> <input id="add_lokacia" type="text" placeholder="ადგილი"> </div>
+            <div class="item"> <input id="add_raodenoba" type="number" placeholder="რაოდენობა"> </div>
+            <div class="item"> <input id="add_fasi" type="number" placeholder="ფასი"> </div>
+
+                <div class="item_1_btn_line">
+                  <input type="button" name="add_btn" id="add_btn"  class="button add_btn_" value="დამატება">
+                </div>
+        
+    </form>
+  </article>
+
+
+
+
+
+
+
+<div  class="table_conteiner">
+  <table id="_first_table">
+    <tbody id="table_body">
+      <tr id="table_header_line"></tr>
+    </tbody>
+  </table>
+</div>
+
+</section>
+
+<footer class="end_line"> @ Roland Armeladze 2023 </footer>
+
+  <script>
+    function input_focus() {
+        let add_dasaxeleba = document.getElementById('add_dasaxeleba');
+            add_dasaxeleba.focus();
+    }
+
+input_focus();
+
+
+</script>
+<script src="stm.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+[
+    [
+        {
+            "data_time": "10\/01\/2023"
+        },
+        {
+            "saxeli": "\u10e1\u10d0\u10e5\u10d0\u10e0\u10d4 \u10db\u10d8\u10dc\u10d0"
+        },
+        {
+            "komentari": "\u10e1\u10d4\u10d3\u10d0\u10dc\u10d8 \/ \u10ef\u10d8\u10de\u10d8"
+        },
+        {
+            "raodenoba": "1"
+        },
+        {
+            "fasi": "85"
+        },
+        {
+            "fasi_total": 85
+        }
+    ],
+    [
+        {
+            "data_time": "10\/01\/2023"
+        },
+        {
+            "saxeli": "\u10e0\u10d0\u10d3\u10d8\u10d0\u10e2\u10dd\u10e0\u10d8"
+        },
+        {
+            "komentari": "\u10d0\u10da\u10e3\u10db\u10d8\u10dc\u10d8\u10e1"
+        },
+        {
+            "raodenoba": "1"
+        },
+        {
+            "fasi": "120"
+        },
+        {
+            "fasi_total": 120
+        }
+    ],
+    [
+        {
+            "data_time": "10\/01\/2023"
+        },
+        {
+            "saxeli": "\u10e1\u10d0\u10d1\u10e3\u10e0\u10d0\u10d5\u10d4\u10d1\u10d8"
+        },
+        {
+            "komentari": "\u10d0\u10ee\u10d0\u10da\u10d8"
+        },
+        {
+            "raodenoba": "4"
+        },
+        {
+            "fasi": "70"
+        },
+        {
+            "fasi_total": 280
+        }
+    ],
+    [
+        {
+            "data_time": "10\/01\/2023"
+        },
+        {
+            "saxeli": "\u10e1\u10d0\u10e5\u10d0\u10e0\u10d4 \u10db\u10d8\u10dc\u10d0"
+        },
+        {
+            "komentari": "\u10e1\u10d4\u10d3\u10d0\u10dc\u10d8 \/ \u10ef\u10d8\u10de\u10d8"
+        },
+        {
+            "raodenoba": "2"
+        },
+        {
+            "fasi": "85"
+        },
+        {
+            "fasi_total": 170
+        }
+    ]
+]

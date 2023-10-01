@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="new_syle.css">
+    <script src="stm.js"></script>
+
+    <title>შპს.'ს.ტემუ' ჯგუფი</title>  
+
+    <style>
+      header::after {
+    content: "პროდუქტის ფასები";
+      }
+      .find_conteiner {
+width: 70%;
+}
+.find_item {
+justify-content:center;
+}
+
+
+    </style>
+    
+    
+</head>
+<body onload="main(); fasebi();">
+
+    <header>
+              <div class="baner"> 
+                <img src="img/stm_group1.png"> 
+          </div>
+
+          <div id="meniu_btn" class="meniu_btn">
+
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class= "line"></div>
+          </div>
+
+
+       <nav id="nav" class="nav">
+        <ul>
+            <li id="dzebna" class="list-item"> მთავარი</li>
+            <li id="damateba" class="list-item"> დამატება</li>
+            <li id="tsashla"  class="list-item"> წაშლა</li>
+            <li id="fasi"  class="list-item  meniu_active"> ფასები</li>
+            <li id="istoria"  class="list-item">ისტორია</li>
+          </ul>
+       </nav>
+
+
+    </header>
+
+<section>
+
+          <form id="find_item" class="find_item">
+                <div class="find_conteiner">
+                  <img src="img/find.png">
+                  <input id="produqtis_dasaxeleba" class="produqtis_dasaxeleba" type="text" placeholder="საძიებო სიტყვა">
+                </div>
+          </form>
+
+
+
+          <div  class="table_conteiner">
+
+
+            <table>
+              <tbody id="table_line_fasi">
+                <tr id="table_header_line">
+                  <td>N.</td>
+                  <td>დასახელება</td>
+                  <td>შენიშვნა</td>
+                  <td>გასაყიდი ფასი</td>
+                </tr>
+
+
+              </tbody>
+            </table>
+      
+      
+          </div>
+      
+      
+
+
+
+
+</section>
+
+
+<footer> @ Roland Armeladze 2023 </footer>
+
+
+<script src="stm.js"></script>
+
+
+
+
+
+</body>
+</html>

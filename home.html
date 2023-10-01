@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="stm.css"> -->
+    <link rel="stylesheet" href="new_syle.css">
+
+    <style>
+      header::after{
+          display: none;
+        }
+    </style>
+    <title>შპს.'ს.ტემუ' ჯგუფი</title>  
+
+</head>
+
+<body onload="main(); dzebna();">
+
+      <header>
+                <div class="baner"> 
+                  <img src="img/stm_group1.png"> 
+                      <div class="nashti">
+                        <ul>
+                          <li>საერთო ნაშთი</li>
+                          <li id="saerto_girebuleba_btn"><samp id="saerto_girebuleba">****** ₾.</samp> <img id="saerto_girebuleba_view"  src="img/view.png">  </li>
+                        </ul>
+                      </div>
+            </div>
+            <div id="meniu_btn" class="meniu_btn">
+
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class= "line"></div>
+            </div>
+  
+
+         <nav id="nav" class="nav">
+            <ul>
+              <li id="dzebna" class="list-item meniu_active"> მთავარი</li>
+              <li id="damateba" class="list-item"> დამატება</li>
+              <li id="tsashla"  class="list-item"> წაშლა</li>
+              <li id="fasi"  class="list-item"> ფასები</li>
+              <li id="istoria"  class="list-item">ისტორია</li>
+            </ul>
+
+         </nav>
+
+         <div class="gayiduli_produqcia">
+            <div class="gayiduli_produqcia_head"><samp>მიმდინარე დღის შედეგი</samp><samp id="dgis_shedegi_txt"></samp> <samp id="view_more" class="view_more">მეტის ნახვა</samp></div>
+
+            <table>
+              <tbody id="dgevandeli_gayidvis_istoria">
+                <tr class="dgevandeli_gayidvis_istoria_header">
+                  <td>N.</td>
+                  <td>სახელი</td>
+                  <td>რაოდენობა</td>
+                  <td>ღირებულება</td>
+                </tr>
+              </tbody>
+            </table>
+
+         </div>
+
+      </header>
+
+  <section>
+
+            <form id="find_item" class="find_item">
+                  <div class="find_conteiner">
+                    <img src="img/find.png">
+                    <!-- <input id="produqtis_dasaxeleba" class="produqtis_dasaxeleba" type="text" placeholder="შეიყვანე პროდუქტის სახელი"> -->
+                    <input id="produqtis_dasaxeleba" class="produqtis_dasaxeleba" type="text" placeholder="დასახელება">
+                  </div>
+                      <div class="find_conteiner">
+                        <img src="img/find.png">
+                        <!-- <input id="productis_komentari" class="productis_komentari" type="text" placeholder="შეიყვანე პროდუქტის კომენტარი">   -->
+                        <input id="productis_komentari" class="productis_komentari" type="text" placeholder="კომენტარი">  
+                      </div>
+            </form>
+
+
+
+           <article class="gasayidi_producti">
+
+              <table class="gasayidi_inf">
+
+                <tbody  id="gasayidi_producti">
+                  <tr id="gasayidi_productis_info" >
+                    <td><div class="text">სახელი:</div><samp id="gasayidi_saxeli"></samp></td>
+                    <td><div class="text">კომენტარი:</div><samp id="gasayidi_komentari"></samp></td>
+                    <td><div class="text">ადგილი:</div><samp id="gasayidi_adgili"></samp></td>                    
+                    <td><div class="text" >მარაგშია:</div><samp id="gasayidi_raodenoba"></samp></td>
+                    <td><div class="text">ფასი:</div><samp id="gasayidi_fasi"></samp></td>
+                  </tr>
+                </tbody>
+
+
+              </table>
+              
+              <div class="gasayidi_btn">
+
+                <div class="info_text">რამდენის გაყიდვა გსურთ?</div>
+                      
+                  <input id="gayiduli_raodenoba" class="inner_input" type="number" value="1">
+<div class="misagebi_tanxa">თქვენ აიღებთ - <samp  id="misagebi_tanxa"> 0 ₾.</samp></div>
+            <div id="produqtis_gayidva" class="button">გაყიდვა</div>
+</div>
+
+            </article>
+
+
+
+
+                  <div class="table_conteiner">
+
+              <div id="result" class="result">
+                <table>
+                  <tbody id="result_table">
+                  </tbody>
+                </table>
+              </div>
+
+
+                    <table id="_first_table">
+                      <tbody id="table_body">
+                        <tr id="table_header_line"></tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+
+  </section>
+
+
+  <footer> @ Roland Armeladze 2023 </footer>
+
+
+<script src="stm.js"></script>
+
+
+
+
+<script>
+
+
+
+
+</script>
+
+
+</body>
+</html>
